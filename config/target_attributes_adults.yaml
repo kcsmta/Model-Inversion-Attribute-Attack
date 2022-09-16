@@ -1,0 +1,65 @@
+#########################################
+#             ADULTS dataset            #
+#########################################
+
+# target_attribute:
+#   isBinary: False 
+#   target_attribute_id: 1
+#   target_attribute_name: "workclass"
+#   target_attribute_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+#   target_attribute_names: ['?', 'Federal-gov', 'Local-gov', 'Never-worked', 'Private', 'Self-emp-inc', 'Self-emp-not-inc', 'State-gov', 'Without-pay']
+#   target_attribute_names_with_noise: ['? (with noise)', 'Federal-gov (with noise)', 'Local-gov (with noise)', 'Never-worked (with noise)', 
+#   'Private (with noise)', 'Self-emp-inc (with noise)', 'Self-emp-not-inc (with noise)', 'State-gov (with noise)', 'Without-pay (with noise)']
+#   target_attribute_names_with_DP: ['? (with DP)', 'Federal-gov (with DP)', 'Local-gov (with DP)', 'Never-worked (with DP)', 
+#   'Private (with DP)', 'Self-emp-inc (with DP)', 'Self-emp-not-inc (with DP)', 'State-gov (with DP)', 'Without-pay (with DP)']
+#   target_attribute_names_with_DP_with_noise: ['? (with DP, with noise)', 'Federal-gov (with DP, with noise)', 'Local-gov (with DP, with noise)', 'Never-worked (with DP, with noise)', 
+#   'Private (with DP, with noise)', 'Self-emp-inc (with DP, with noise)', 'Self-emp-not-inc (with DP, with noise)', 'State-gov (with DP, with noise)', 'Without-pay (with DP, with noise)']
+#   target_attribute_represent_colors: ["black", "darkgray", "lightcoral", "red", "chocolate", "green", "cyan", "skyblue", "blue"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   isBinary: False
+#   target_attribute_id: 8
+#   target_attribute_name: "race"
+#   target_attribute_ids: [0, 1, 2, 3, 4]
+#   target_attribute_names: ['Amer-Indian-Eskimo', 'Asian-Pac-Islander', 'Black', 'Other', 'White']
+#   target_attribute_names_with_noise: ['Amer-Indian-Eskimo (with noise)', 'Asian-Pac-Islander (with noise)', 'Black (with noise)', 'Other (with noise)', 'White (with noise)']
+#   target_attribute_names_with_DP: ['Amer-Indian-Eskimo (with DP)', 'Asian-Pac-Islander (with DP)', 'Black (with DP)', 'Other (with DP)', 'White (with DP)']
+#   target_attribute_names_with_DP_with_noise: ['Amer-Indian-Eskimo (with DP, with noise)', 'Asian-Pac-Islander (with DP, with noise)', 'Black (with DP, with noise)', 'Other (with DP, with noise)', 'White (with DP, with noise)']
+#   target_attribute_represent_colors: ["red", "green", "cyan", "skyblue", "blue"]
+#   target_attribute_noise_lower_bound: -0.2
+#   target_attribute_noise_upper_bound: 0.2
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   isBinary: False
+#   target_attribute_id: 5
+#   target_attribute_name: "marital status"
+#   target_attribute_ids: [0, 1, 2, 3, 4, 5, 6, 7]
+#   target_attribute_names: ['Never-married', 'Married-civ-spouse', 'Widowed', 'Divorced', 'Separated', 'Married-spouse-absent', 'Married-AF-spouse']
+#   target_attribute_names_with_noise: ['Never-married (with noise)', 'Married-civ-spouse (with noise)', 'Widowed (with noise)', 'Divorced (with noise)',
+#    'Separated (with noise)', 'Married-spouse-absent (with noise)', 'Married-AF-spouse (with noise)']
+#   target_attribute_represent_colors: 
+#   target_attribute_represent_colors_with_noise: 
+#   target_attribute_noise_lower_bound: -0.4
+#   target_attribute_noise_upper_bound: 0.4
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+target_attribute:
+  isBinary: True
+  target_attribute_id: 9
+  target_attribute_name: "gender"
+  target_attribute_ids: [0, 1]
+  target_attribute_names: ['Female', 'Male']
+  target_attribute_names_with_noise: ['Female (with noise)', 'Male (with noise)']
+  target_attribute_represent_colors: ["red", "green"]
+  target_attribute_represent_colors_with_noise: ["blue", "purple"]
+  target_attribute_noise_lower_bound: -0.2
+  target_attribute_noise_upper_bound: 0.2
+  # target_attribute_noise_lower_bound: -1.0
+  # target_attribute_noise_upper_bound: 1.0

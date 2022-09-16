@@ -1,0 +1,29 @@
+# target_attribute:
+#   isBinary: True
+#   target_attribute_id: 9
+#   target_attribute_name: "xmovie"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ['x_no', 'x_yes']
+#   target_attribute_names_with_noise: ['x_no (with noise)', 'x_yes (with noise)']
+#   target_attribute_names_with_DP: ['x_no (with DP)', 'x_yes (with DP)']
+#   target_attribute_names_with_DP_with_noise: ['x_no (with DP, with noise)', 'x_yes (with DP, with noise)']
+#   target_attribute_represent_colors: ["red", "green"]
+#   target_attribute_noise_lower_bound: -0.2
+#   target_attribute_noise_upper_bound: 0.2
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+target_attribute:
+  isBinary: False
+  target_attribute_id: 7
+  target_attribute_name: "race"
+  target_attribute_ids: [0, 1, 2]
+  target_attribute_names: ['white', 'black', ['other']]
+  target_attribute_names_with_noise: ['white (with noise)', 'black (with noise)', 'other (with noise)']
+  target_attribute_names_with_DP: ['white (with DP)', 'black (with DP)', 'other (with DP)']
+  target_attribute_names_with_DP_with_noise: ['white (with DP, with noise)', 'black (with DP, with noise)', 'other (with DP, with noise)']
+  target_attribute_represent_colors: ["red", "green", "blue"]
+  target_attribute_noise_lower_bound: -0.2
+  target_attribute_noise_upper_bound: 0.2
+  # target_attribute_noise_lower_bound: -1.0
+  # target_attribute_noise_upper_bound: 1.0

@@ -1,0 +1,110 @@
+#########################################
+#            COVID19 dataset            #
+#########################################
+
+# target_attribute:
+#   target_attribute_id: 0
+#   target_attribute_name: "Have cough?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Not cough", "cough"]
+#   target_attribute_names_with_noise: ["Not cough (with noise)", "cough (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.1
+#   target_attribute_noise_upper_bound: 0.1
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+target_attribute:
+  isBinary: True # False
+  target_attribute_id: 1
+  target_attribute_name: "Have fever?"
+  target_attribute_ids: [0, 1]
+  target_attribute_names: ["Not fever", "fever"]
+  target_attribute_names_with_noise: ["Not fever (with noise)", "fever (with noise)"]
+  target_attribute_names_with_DP: ["Not fever (with DP)", "fever (with DP)"]
+  target_attribute_names_with_DP_with_noise: ["Not fever (with DP and noise)", "fever (with DP and noise)"]
+  target_attribute_represent_colors: ["green", "red"]
+  target_attribute_noise_lower_bound: -0.1
+  target_attribute_noise_upper_bound: 0.1
+  # target_attribute_noise_lower_bound: -1.0
+  # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 2
+#   target_attribute_name: "Have sore_throat?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Not sore_throat", "sore_throat"]
+#   target_attribute_names_with_noise: ["Not sore_throat (with noise)", "sore_throat (with noise)"]
+#   target_attribute_names_with_DP: ["Not sore_throat (with DP)", "sore_throat (with DP)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.1
+#   target_attribute_noise_upper_bound: 0.1
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 3
+#   target_attribute_name: "Have shortness_of_breath?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Not shortness_of_breath", "shortness_of_breath"]
+#   target_attribute_names_with_noise: ["Not shortness_of_breath (with noise)", "shortness_of_breath (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 4
+#   target_attribute_name: "Have head_ache?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Not head_ache", "head_ache"]
+#   target_attribute_names_with_noise: ["Not head_ache (with noise)", "head_ache (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 5
+#   target_attribute_name: "Have age_60_and_above?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Under 60", "Above 60"]
+#   target_attribute_names_with_noise: ["Not headage_60_and_above_ache (with noise)", "age_60_and_above (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 6
+#   target_attribute_name: "Gender"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["female", "male"]
+#   target_attribute_names_with_noise: ["female (with noise)", "male (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   target_attribute_id: 7
+#   target_attribute_name: "Have close contact?"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ["Dont have close contact", "Have close contact"]
+#   target_attribute_names_with_noise: ["Dont have close contact (with noise)", "Have close contact (with noise)"]
+#   target_attribute_represent_colors: ["green", "red"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.05
+#   target_attribute_noise_upper_bound: 0.05
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0

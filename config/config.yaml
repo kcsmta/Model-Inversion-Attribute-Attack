@@ -1,0 +1,200 @@
+# problem: 'covid19'
+# problem: 'adults'
+# problem: 'fivethirtyeight'
+problem: 'gss'
+
+random:
+  torch_random_seed: 0
+  torch_random_seed: 0
+  random_seed_python: 0
+  random_seed_numpy: 0
+  random_state_sklearn: 5
+
+dataset:
+  covid19:
+    path_to_data: "./dataset/corona_tested_individuals_ver_006.english.csv"
+    attributes_ids: [0, 1, 2, 3, 4, 5, 6, 7]
+    attributes_names: ['cough', 'fever', 'sore_throat', 'shortness_of_breath', 'head_ache', 'age_60_and_above', 'gender', 'test_indication']
+    path_to_x_train: "./dataset_for_attack/covid19_X_train.csv"
+    path_to_x_train_with_DP: "./dataset_for_attack/covid19_X_train_with_DP.csv"
+    path_to_x_train_with_noise: "./dataset_for_attack/covid19_X_train_with_noise.csv"
+    path_to_x_train_with_DP_with_noise: "./dataset_for_attack/covid19_X_train_with_DP_with_noise.csv"
+    path_to_y_train: "./dataset_for_attack/covid19_y_train.csv"
+    path_to_x_test: "./dataset_for_attack/covid19_X_test.csv"
+    path_to_x_test_with_noise: "./dataset_for_attack/covid19_X_test_with_noise.csv"
+    path_to_x_test_with_DP: "./dataset_for_attack/covid19_X_test_with_DP.csv"
+    path_to_x_test_with_DP_with_noise: "./dataset_for_attack/covid19_X_test_with_DP_with_noise.csv"
+    path_to_y_test: "./dataset_for_attack/covid19_y_test.csv"
+
+  adults:
+    path_to_data: "./dataset/adult.csv"
+    attributes_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    attributes_names: ['age', 'workclass', 'fnlwgt', 'education', 'educational-num', 'marital-status', 'occupation', 'relationship',
+    'race', 'gender', 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country']
+    path_to_x_train: "./dataset_for_attack/adults_X_train.csv"
+    path_to_x_train_with_DP: "./dataset_for_attack/adults_X_train_with_DP.csv"
+    path_to_x_train_with_noise: "./dataset_for_attack/adults_X_train_with_noise.csv"
+    path_to_x_train_with_DP_with_noise: "./dataset_for_attack/adults_X_train_with_DP_with_noise.csv"
+    path_to_y_train: "./dataset_for_attack/adults_y_train.csv"
+    path_to_x_test: "./dataset_for_attack/adults_X_test.csv"
+    path_to_x_test_with_noise: "./dataset_for_attack/adults_X_test_with_noise.csv"
+    path_to_x_test_with_DP: "./dataset_for_attack/adults_X_test_with_DP.csv"
+    path_to_x_test_with_DP_with_noise: "./dataset_for_attack/adults_X_test_with_DP_with_noise.csv"
+    path_to_y_test: "./dataset_for_attack/adults_y_test.csv"
+  
+  fivethirtyeight:
+    path_to_data: "./dataset/steak-risk-survey.csv"
+    attributes_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    attributes_names: ['lottery', 'cigaretters', 'alcohol', 'gamble', 'skydiving', 'speed_limit', 'cheated', 'gender',
+    'age', 'income', 'education', 'location']
+    path_to_x_train: "./dataset_for_attack/fivethirtyeight_X_train.csv"
+    path_to_x_train_with_DP: "./dataset_for_attack/fivethirtyeight_X_train_with_DP.csv"
+    path_to_x_train_with_noise: "./dataset_for_attack/fivethirtyeight_X_train_with_noise.csv"
+    path_to_x_train_with_DP_with_noise: "./dataset_for_attack/fivethirtyeight_X_train_with_DP_with_noise.csv"
+    path_to_y_train: "./dataset_for_attack/fivethirtyeight_y_train.csv"
+    path_to_x_test: "./dataset_for_attack/fivethirtyeight_X_test.csv"
+    path_to_x_test_with_noise: "./dataset_for_attack/fivethirtyeight_X_test_with_noise.csv"
+    path_to_x_test_with_DP: "./dataset_for_attack/fivethirtyeight_X_test_with_DP.csv"
+    path_to_x_test_with_DP_with_noise: "./dataset_for_attack/fivethirtyeight_X_test_with_DP_with_noise.csv"
+    path_to_y_test: "./dataset_for_attack/fivethirtyeight_y_test.csv"
+  
+  gss:
+    path_to_data: "./dataset/GSS_5079.csv"
+    attributes_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    attributes_names: ['year', 'marital', 'divorce', 'childs', 'age', 'educ', 'sex', 'race', 'relig', 'xmovie', 'pornlaw']
+    path_to_x_train: "./dataset_for_attack/gss_X_train.csv"
+    path_to_x_train_with_DP: "./dataset_for_attack/gss_X_train_with_DP.csv"
+    path_to_x_train_with_noise: "./dataset_for_attack/gss_X_train_with_noise.csv"
+    path_to_x_train_with_DP_with_noise: "./dataset_for_attack/gss_X_train_with_DP_with_noise.csv"
+    path_to_y_train: "./dataset_for_attack/gss_y_train.csv"
+    path_to_x_test: "./dataset_for_attack/gss_X_test.csv"
+    path_to_x_test_with_noise: "./dataset_for_attack/gss_X_test_with_noise.csv"
+    path_to_x_test_with_DP: "./dataset_for_attack/gss_X_test_with_DP.csv"
+    path_to_x_test_with_DP_with_noise: "./dataset_for_attack/gss_X_test_with_DP_with_noise.csv"
+    path_to_y_test: "./dataset_for_attack/gss_y_test.csv"
+
+target_model:
+  covid19:
+    DP:  
+      isDP: False # True
+      delta: 0.00001
+    batch_size: 128
+    epochs: 100
+    learning_rate: 0.01
+    momentum: 0.8
+    train_size: 0.75
+    test_size: 0.25
+    path_to_target_model: './models/covid19_main_task_model.pth'
+    path_to_target_model_with_DP: './models/covid19_main_task_model_with_DP.pth'
+    propotion_to_train_target_model: 0.8
+
+  adults:
+    DP:  
+      isDP: False # True
+      delta: 0.00001
+    batch_size: 128
+    epochs: 100
+    learning_rate: 0.1
+    momentum: 0.8
+    train_size: 0.75
+    test_size: 0.25
+    path_to_target_model: './models/adults_main_task_model.pth'
+    path_to_target_model_with_DP: './models/adults_main_task_model_with_DP.pth'
+    propotion_to_train_target_model: 0.8
+  
+  fivethirtyeight:
+    DP:  
+      isDP: False # True
+      delta: 0.00001
+    batch_size: 128
+    epochs: 100
+    learning_rate: 0.1
+    momentum: 0.5
+    train_size: 0.75
+    test_size: 0.25
+    path_to_target_model: './models/fivethirtyeight_main_task_model.pth'
+    path_to_target_model_with_DP: './models/fivethirtyeight_main_task_model_with_DP.pth'
+    propotion_to_train_target_model: 1.0
+  
+  gss:
+    DP:  
+      isDP: False # True
+      delta: 0.00001
+    batch_size: 128
+    epochs: 100
+    learning_rate: 0.01
+    momentum: 0.8
+    train_size: 0.75
+    test_size: 0.25
+    path_to_target_model: './models/gss_main_task_model.pth'
+    path_to_target_model_with_DP: './models/gss_main_task_model_with_DP.pth'
+    propotion_to_train_target_model: 0.8
+
+attack_model:
+  covid19:
+    propotion_to_train_attack_model: 0.2
+  adults:
+    propotion_to_train_attack_model: 0.2
+  fivethirtyeight:
+    propotion_to_train_attack_model: 1.0
+  gss:
+    propotion_to_train_attack_model: 0.2
+
+  balance_data:
+    method: 'None'
+    # method: 'RandomOverSampler'
+    # method: 'SMOTE'
+    # method: 'ADASYN'
+    # method: 'BorderlineSMOTE'
+
+  model: "KNN"
+  # model: "NB"
+  # model: "DT"
+  # model: "LR"
+  # model: "MLP"
+  # model: "XGBoost"
+  
+  train_size: 0.5
+  test_size: 0.5 # NOTE: remain data used to test, i.e. train_size + test_size = 1.0
+
+  KNN:
+    model_path: "./models/attack_KNN.sav"
+    model_path_with_noise: "./models/attack_KNN_with_noise.sav"
+    model_path_with_DP: "./models/attack_KNN_with_DP.sav"
+    model_path_with_DP_with_noise: "./models/attack_KNN_with_DP_with_noise.sav"
+    # n_neighbors: 3
+    n_neighbors: 5
+    # n_neighbors: 10
+  
+  NB:
+    model_path: "./models/attack_NB.sav"
+    model_path_with_noise: "./models/attack_NB_with_noise.sav"
+    model_path_with_DP: "./models/attack_NB_with_DP.sav"
+    model_path_with_DP_with_noise: "./models/attack_NB.sav"
+
+  LR:
+    model_path: "./models/attack_LR.sav"
+    model_path_with_noise: "./models/attack_LR_with_noise.sav"
+    model_path_with_DP: "./models/attack_LR_with_DP.sav"
+    model_path_with_noise_with_DP: "./models/attack_LR_with_noise_with_DP.sav"
+
+  DT:
+    model_path: "./models/attack_DT.sav"
+    model_path_with_noise: "./models/attack_DT_with_noise.sav"
+    model_path_with_DP: "./models/attack_DT_with_DP.sav"
+    model_path_with_DP_with_noise: "./models/attack_DT_with_DP_with_noise.sav"
+
+  MLP:
+    model_path: "./models/attack_MLP.sav"
+    model_path_with_noise: "./models/attack_MLP_with_noise.sav"
+    model_path_with_DP: "./models/attack_MLP_with_DP.sav"
+    model_path_with_DP_with_noise: "./models/attack_MLP_with_DP_with_noise.sav"
+    solver: 'lbfgs'
+    # alpha: 1e-5
+    # hidden_layer_sizes: (6, 2) 
+    
+  XGBoost:
+    model_path: "./models/attack_XGBoost.sav"
+    model_path_with_noise: "./models/attack_XGBoost_with_noise.sav"
+    model_path_with_DP: "./models/attack_XGBoost_with_DP.sav"
+    model_path_with_DP_with_noise: "./models/attack_XGBoost_with_DP_with_noise.sav"   

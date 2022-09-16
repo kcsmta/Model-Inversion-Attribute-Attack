@@ -1,0 +1,46 @@
+#########################################
+#      FIVETHIRYEIGHT dataset           #
+#########################################
+
+# target_attribute:
+#   isBinary: True
+#   target_attribute_id: 2
+#   target_attribute_name: "alcohol"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ['no alcohol', 'alcohol']
+#   target_attribute_names_with_noise: ['no alcohol (with noise)', 'alcohol (with noise)']
+#   target_attribute_names_with_DP: ['no alcohol (with DP)', 'alcohol (with DP)']
+#   target_attribute_names_with_DP_with_noise: ['no alcohol (with DP, with noise)', 'alcohol (with, DP, with noise)']
+#   target_attribute_represent_colors: ["red", "green"]
+#   target_attribute_noise_lower_bound: -0.1
+#   target_attribute_noise_upper_bound: 0.1
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+# target_attribute:
+#   isBinary: True
+#   target_attribute_id: 7
+#   target_attribute_name: "gender"
+#   target_attribute_ids: [0, 1]
+#   target_attribute_names: ['Female', 'Male']
+#   target_attribute_names_with_noise: ['Female (with noise)', 'Male (with noise)']
+#   target_attribute_represent_colors: ["red", "green"]
+#   target_attribute_represent_colors_with_noise: ["blue", "purple"]
+#   target_attribute_noise_lower_bound: -0.1
+#   target_attribute_noise_upper_bound: 0.1
+#   # target_attribute_noise_lower_bound: -1.0
+#   # target_attribute_noise_upper_bound: 1.0
+
+target_attribute:
+  isBinary: False
+  target_attribute_id: 8
+  target_attribute_name: "age"
+  target_attribute_ids: [0, 1, 2, 3]
+  target_attribute_names: ['18-29', '30-44', '45-60', '>60']
+  target_attribute_names_with_noise: ['18-29 (with noise)', '30-44 (with noise)', '45-60 (with noise)', '>60 (with noise)']
+  target_attribute_represent_colors: ["red", "green", "cyan", "skyblue"]
+  target_attribute_represent_colors_with_noise: ["red", "green", "cyan", "skyblue"]
+  target_attribute_noise_lower_bound: -0.1
+  target_attribute_noise_upper_bound: 0.1
+  # target_attribute_noise_lower_bound: -1.0
+  # target_attribute_noise_upper_bound: 1.0
